@@ -3,8 +3,8 @@ ul { padding: 0; list-style: none; }
 a { text-decoration: none; color: lightslategray; cursor: default; }
 a:hover { text-decoration: underline; }
 
-p { font-size: 20px; }
-.siteList { font-family: Arial, Helvetica, sans-serif; font-size: 20px; }
+p, .siteList { font-size: 20px; }
+.siteList { font-family: Arial, Helvetica, sans-serif; }
 
 .main {
     display: flex;
@@ -12,4 +12,15 @@ p { font-size: 20px; }
     text-align: center;
     justify-items: center;
     flex-direction: column;
+    animation: fadeIn 1.2s linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+        margin-top: 20px;
+    } to {
+        opacity: 100%;
+        margin-top: 0px;
+    }
 }
